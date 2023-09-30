@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Rock+Salt&family=Ropa+Sans&family=Rubik&family=Saira:wght@200;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25%;
+
+}
+
+
+/* SECCIONES */
+.container_grid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-areas: "header header header header header"
+                            "main main main main main"
+                            "footer footer footer footer footer";
+    grid-template-rows: 1% auto 1.2%;
+    width: 100%; 
+    height: auto;
+
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: header;
+    grid-column-end: header;
+    grid-row-start: header;
+    grid-row-end: header;
+    height: 100vh;
+
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: main;
+    grid-column-end: main;
+    grid-row-start: main;
+    grid-row-end: footer;
+    height: auto;
+
+   
+}
+
+.footer-contact {
+    grid-column-start: footer;
+    grid-column-end: footer;
+    grid-row-start: footer;
+    grid-row-end: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33% 33% 33%;
+    width: 90%;
+    bottom: 10%;
+    background-color: rgba(234, 0, 255, 0.575);
+    border-radius: 8px;
+    margin-left: 15px ;
+    margin-right: 15px;
+
+    
+
+}
+
+.social-media-p {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+    color: #000;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.social-media-ico {
+    display: flex;
+    justify-content: center; 
+    align-items: start;
+    grid-column: 1 / 4;
+    grid-row: 2 / 2;
+
+}
+
+.footer__link {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 25px;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.footer__link:hover {
+    transform: translateY(-5px);
+}
+
+
+.footer-reserved-right {
+    display: flex;
+    justify-content: center; 
+    align-items: end;
+    grid-column: 1 / 4;
+    grid-row: 3 / 3;
+    color: #000;
+    font-family: Ropa Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button {
+    border: none !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    background-image: url("../assets/img/background-nav.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    z-index: 3;
+}
+
+.gradient-divisor {
+    display: block;
+    width: 90%;
+    height: 10px;
+    position: absolute; 
+    bottom: -7px; 
+    left: 5%; 
+    background-color: rgba(255, 255, 255, 0.253);
+
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
+
+}
+
+.navbar-logo {
+    display: flex;
+    position: relative;
+    width: 230px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+
+}
+
+.navbar-collapse {
+    display: flex;
+    position: relative;
+    justify-content: space-around ;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.nav-link-bestof {
+    font-family: 'Rock Salt', cursive;
+    font-size: calc(16px + 0.5vw);
+       
+}
+
+.nav-link-bibliografia {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 7px;
+    font-size:  calc(16px - 0.1vw);
+    
+}
+
+.nav-link-discografia {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+
+    
+
+}
+
+.nav-link-contact {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    
+}
+
+
+.article-main {
+    background-image: url("../assets/img/mobile-background-main.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: 800px;
+
+
+}
+.article-bestof {
+    background-image: url("../assets/img/mobile-background-bestof.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+
+}
+
+.bestof-h {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rock Salt', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin-top: 50px;
+
+}
+
+.article-bibliografia {
+    background-image: url("../assets/img/mobile-background-bibliografia.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding-top: 200px;
+    padding-bottom: 100px;
+
+}
+
+.bibliografia-h2 {
+    padding-left: 20px;
+    padding-top: 20px;
+    color: antiquewhite;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 7px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.article-discografia {
+    background-image: url("../assets/img/mobile-background-discografia.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    
+
+
+}
+
+.discografia-h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: antiquewhite;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 7px;
+    font-size: 2em;
+    font-weight: 600;
+
+}
+
+.discografia-p{
+    padding-left: 20px;
+    padding-top: 50%;
+    color: antiquewhite;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+
+}
+
+.article-contact {
+    background-image: url("../assets/img/daft-punk-mobile-contact.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    
+}
+
+.contact-h3 {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    bottom: 0;
+
+
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    margin-left: 20px;
+    
+
+}
+
+.submit-text-email {
+    display: flex;
+    position: relative;
+    color: #fff;
+    padding: 4px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 8px;
+  
+}
+
+

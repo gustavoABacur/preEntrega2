@@ -1,0 +1,367 @@
+/* MEDIA QUERY  */
+/* -----------logo---------*/
+
+@media (min-width: 768px) and (max-width: 100vw) {
+    .navbar-logo {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 5;
+
+    }
+
+    .bibliografia-h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-h3 {
+        display: none;
+    }
+
+}
+
+/* --------------TABLET----------------- */
+
+@media (min-width: 767.98px) and (max-width: 1024px) {
+
+    .html {
+        scroll-padding-top: 0% !important;
+
+    }
+
+    .nav-item {
+        width: (50vw - 200px);
+        padding: 10px;
+    }
+
+    .nav-link-bestof {
+        font-family: 'Rock Salt', cursive;
+        width: 200px;
+
+    }
+
+    /* FOOTER  */
+    .footer-contact {
+        background-image: url("../assets/img/footer-gradient.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: rgba(0, 0, 0, 0.363);
+        border-radius: 8px;
+        margin-left: 40px;
+        margin-right: 15px;
+
+    }
+
+    .social-media-p {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        grid-column: 1 / 3;
+        color: #000000;
+        font-size: 0.8em;
+        padding: 10px;
+
+
+    }
+
+    .social-media-ico {
+        display: flex;
+        justify-content: right;
+        margin-right: 20%;
+        align-items: start;
+        grid-column: 1 / 4;
+        grid-row: 2 / 2;
+
+    }
+
+    .footer-reserved-right {
+        justify-content: left;
+        align-items: end;
+        color: #ffffff;
+        font-size: 0.8em;
+
+    }
+
+    /* CONTACT */
+    .article-contact {
+        background-image: url("../assets/img/daft-punk-mobile-contact.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: black;
+        width: 100%;
+        height: 100% !important;
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+
+    }
+
+    /* BIBLIOGRAFIA */
+
+    .article-bibliografia {
+        background-image: url("../assets/img/mobile-background-bibliografia.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        width: 100%;
+        height: auto;
+        padding-top: 200px;
+        padding-bottom: 100px;
+
+    }
+
+
+    /* best of */
+
+    .article-bestof {
+        background-image: url("../assets/img/daft-punk-background-bestof.jpg");
+        height: auto;
+
+
+
+    }
+
+
+
+    /* MAIN */
+
+    .article-main {
+        background-image: url("../assets/img/daft-punk-background-discografia.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: black;
+        width: 100%;
+        height: 2000px;
+
+    }
+
+
+    /* DICOGRAFIA */
+
+    .article-discografia {
+        background-image: url("../assets/img/mobile-background-discografia.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .discografia-h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-size: 2em;
+        font-weight: 600;
+
+    }
+
+    .discografia-p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 10%;
+        font-size: 1.5rem;
+
+    }
+
+    .article-contact {
+        height: 70% !important;
+    }
+
+
+}
+
+/* -------------------------------- 1440p ---------------------------- */
+
+@media (min-width: 1024px) and (max-width: 100vw) {
+    html {
+        scroll-padding-top: 8% !important;
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: auto;
+
+
+    }
+
+    .nav-item {
+
+        margin-right: 20px;
+    }
+
+    .article-main {
+        background-image: url("../assets/img/daft-punk-background-discografia.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        width: 100%;
+        height: 800px;
+
+
+    }
+
+    .article-bestof {
+        background-image: url("../assets/img/daft-punk-background-bestof.jpg");
+
+
+
+    }
+
+    .article-bibliografia {
+        background-image: url("../assets/img/daft-punk-background-bibliografia.jpeg");
+        height: 2560px;
+    }
+
+    .article-contact {
+        background-image: url("../assets/img/daft-punk-background-contact.jpg");
+        background-size: contain;
+        height: 100%;
+    }
+
+    /* FOOTER  */
+    .footer-contact {
+        background-image: url("../assets/img/footer-gradient.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: rgba(0, 0, 0, 0.363);
+        border-radius: 8px;
+        margin-left: 40px;
+        margin-right: 15px;
+
+
+    }
+
+    .social-media-p {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        grid-column: 1 / 3;
+        color: #000000;
+        font-size: 0.8em;
+        padding: 10px;
+
+
+    }
+
+    .social-media-ico {
+        display: flex;
+        justify-content: right;
+        margin-right: 20%;
+        align-items: start;
+        grid-column: 1 / 4;
+        grid-row: 2 / 2;
+
+    }
+
+    .footer-reserved-right {
+        justify-content: left;
+        align-items: end;
+        color: #ffffff;
+        font-size: 0.8em;
+
+    }
+
+    .form {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 400px;
+        margin-bottom: 0;
+        margin-left: 20px;
+        left: 50%;
+
+
+    }
+
+    .submit-text-email {
+        display: flex;
+        position: relative;
+        color: #fff;
+        padding: 4px;
+    }
+
+    .submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 8px;
+
+    }
+
+    .container_grid {
+
+        grid-template-rows: 0.5% auto 2%;
+
+
+    }
+
+    /* DICOGRAFIA */
+
+    .article-discografia {
+        background-image: url("../assets/img/mobile-background-discografia.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .discografia-h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-size: 2em;
+        font-weight: 600;
+
+    }
+
+    .discografia-p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 10%;
+        font-size: 1.5rem;
+
+    }
+
+    .article-contact {
+        height: 1024px !important;
+    }
+
+
+}
